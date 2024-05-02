@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fbd34fde.css",
+    "main.js": "/static/js/main.546eb253.js",
+    "static/js/453.9e2fb21d.chunk.js": "/static/js/453.9e2fb21d.chunk.js",
+    "static/media/img-3.png": "/static/media/img-3.2a508d30996a6d61e9a7.png",
+    "static/media/img-2.png": "/static/media/img-2.958ec31dcaa1917144c3.png",
+    "static/media/img-1.png": "/static/media/img-1.276e1f6c3297eb0a84c9.png",
+    "static/media/image 8.png": "/static/media/image 8.4c29ce5ccc64853560c5.png",
+    "static/media/Mapsicle Map.png": "/static/media/Mapsicle Map.7e32b291b4e418d1b0b1.png",
+    "static/media/set2.png": "/static/media/set2.68d3772ff1dfda72f77f.png",
+    "static/media/set3.png": "/static/media/set3.53186a5d7b60780a1bd9.png",
+    "static/media/macaron-matcha.png": "/static/media/macaron-matcha.8190d233603348b7b80a.png",
+    "static/media/macaron-chocolate.png": "/static/media/macaron-chocolate.138932e1987e5bfc6ac2.png",
+    "static/media/set1.png": "/static/media/set1.b817c2f0b6f13466a8b0.png",
+    "static/media/macaron-berry.png": "/static/media/macaron-berry.dd1b58b6a84c30ca40c1.png",
+    "static/media/image 7.png": "/static/media/image 7.e0d6f7a8c5a92016ccb7.png",
+    "static/media/image 3.png": "/static/media/image 3.af5c2bc1726001710d6e.png",
+    "static/media/image 5.png": "/static/media/image 5.3dd038f6180a8c3e9522.png",
+    "static/media/image 1.png": "/static/media/image 1.e0253bd3d9cfc668c608.png",
+    "index.html": "/index.html",
+    "main.fbd34fde.css.map": "/static/css/main.fbd34fde.css.map",
+    "main.546eb253.js.map": "/static/js/main.546eb253.js.map",
+    "453.9e2fb21d.chunk.js.map": "/static/js/453.9e2fb21d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbd34fde.css",
+    "static/js/main.546eb253.js"
+  ]
+}
