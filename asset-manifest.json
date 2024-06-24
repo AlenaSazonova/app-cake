@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbd34fde.css",
-    "main.js": "/static/js/main.546eb253.js",
+    "main.css": "/static/css/main.06f456ce.css",
+    "main.js": "/static/js/main.bb6cf0ef.js",
     "static/js/453.9e2fb21d.chunk.js": "/static/js/453.9e2fb21d.chunk.js",
+    "static/media/CormorantGaramond-Bold.ttf": "/static/media/CormorantGaramond-Bold.d38785ebb1898db6ec71.ttf",
+    "static/media/CormorantGaramond-SemiBold.ttf": "/static/media/CormorantGaramond-SemiBold.48dbf64395a7161a641e.ttf",
     "static/media/img-3.png": "/static/media/img-3.2a508d30996a6d61e9a7.png",
     "static/media/img-2.png": "/static/media/img-2.958ec31dcaa1917144c3.png",
     "static/media/img-1.png": "/static/media/img-1.276e1f6c3297eb0a84c9.png",
     "static/media/image 8.png": "/static/media/image 8.4c29ce5ccc64853560c5.png",
     "static/media/Mapsicle Map.png": "/static/media/Mapsicle Map.7e32b291b4e418d1b0b1.png",
+    "static/media/sun1.png": "/static/media/sun1.f7d7a8911183a8a2f9cb.png",
+    "static/media/OpenSans-Regular.ttf": "/static/media/OpenSans-Regular.b8cc747a58ffa52b7ff9.ttf",
+    "static/media/OpenSans-SemiBold.ttf": "/static/media/OpenSans-SemiBold.c7ab78a511011d4e147e.ttf",
+    "static/media/moon.png": "/static/media/moon.9e07c89bf60858a01821.png",
     "static/media/set2.png": "/static/media/set2.68d3772ff1dfda72f77f.png",
-    "static/media/set3.png": "/static/media/set3.53186a5d7b60780a1bd9.png",
+    "static/media/set3.png": "/static/media/set3.d07fbd01d72e97687e36.png",
     "static/media/macaron-matcha.png": "/static/media/macaron-matcha.8190d233603348b7b80a.png",
     "static/media/macaron-chocolate.png": "/static/media/macaron-chocolate.138932e1987e5bfc6ac2.png",
     "static/media/set1.png": "/static/media/set1.b817c2f0b6f13466a8b0.png",
@@ -19,12 +25,12 @@
     "static/media/image 5.png": "/static/media/image 5.3dd038f6180a8c3e9522.png",
     "static/media/image 1.png": "/static/media/image 1.e0253bd3d9cfc668c608.png",
     "index.html": "/index.html",
-    "main.fbd34fde.css.map": "/static/css/main.fbd34fde.css.map",
-    "main.546eb253.js.map": "/static/js/main.546eb253.js.map",
+    "main.06f456ce.css.map": "/static/css/main.06f456ce.css.map",
+    "main.bb6cf0ef.js.map": "/static/js/main.bb6cf0ef.js.map",
     "453.9e2fb21d.chunk.js.map": "/static/js/453.9e2fb21d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbd34fde.css",
-    "static/js/main.546eb253.js"
+    "static/css/main.06f456ce.css",
+    "static/js/main.bb6cf0ef.js"
   ]
 }
