@@ -1,72 +1,70 @@
 import React from 'react';
 import GenericVectorTop from '../generic/genericVectorTop/GenericVectorTop';
-
-import twitter from '../../assets/footer/Twitter.png';
-import facebook from '../../assets/footer/Facebook.png';
-import instagram from '../../assets/footer/Instagram.png';
-import logo from '../../assets/footer/Group 1.png';
-
+import twitter from '../icons/footer/Twitter.png';
+import facebook from '../icons/footer/Facebook.png';
+import instagram from '../icons/footer/Instagram.png';
+import logo from '../icons/footer/Group 1.png';
 import {
-    StyledFooter,
-    StyledFooterLinks,
-    StyledFooterBlock,
-    StyledFooterLogo,
-    StyledFooterSubscriptionForm,
-    StyledFooterInputWithButton,
-    StyledFooterInput,
-    StyledFooterButton,
-    StyledFooterInformation,
-    StyledFooterContacts,
-    StyledFooterWorkingHours
+    FooterSection,
+    SocialMediaLinks,
+    FooterContainer,
+    LogoSection,
+    FormContainer,
+    EmailSubscription,
+    Input,
+    Button,
+    ContactAndHours,
+    Contacts,
+    WorkingHours
 }
     from './Footer.style';
 
 
 function Footer() {
     return (
-        <StyledFooter>
+        <FooterSection>
             <GenericVectorTop />
-            <StyledFooterLinks>
-                <a href="https://www.google.com/" >
+            <SocialMediaLinks>
+                <a href="https://www.twitter.com/" >
                     <img src={twitter} alt="twitter" />
                 </a>
-                <a href="https://www.google.com/" >
+                <a href="https://www.facebook.com/" >
                     <img src={facebook} alt="facebook" />
                 </a>
-                <a href="https://www.google.com/" >
+                <a href="https://www.instagram.com/" >
                     <img src={instagram} alt="instagram" />
                 </a>
-            </StyledFooterLinks>
+            </SocialMediaLinks>
 
-            <StyledFooterBlock>
-                <StyledFooterLogo>
+            <FooterContainer>
+                <LogoSection>
                     <img src={logo} alt="logo" />
                     <p>Macaronsmania</p>
-                </StyledFooterLogo>
+                </LogoSection>
 
-                <StyledFooterSubscriptionForm>
+                <FormContainer>
                     <p>Subscribe to the newsletter and be aware of promotions</p>
-                    <StyledFooterInputWithButton>
-                        <StyledFooterInput type="text" placeholder="Your Email" />
-                        <StyledFooterButton>Send</StyledFooterButton>
-                    </StyledFooterInputWithButton>
+                    <EmailSubscription>
+                        <Input type="text" placeholder="Your Email" />
+                        <Button>Send</Button>
+                    </EmailSubscription>
                     <p>2023 ©Macaronsmania. All Rights Reserved.</p>
-                    <p>Created by Julianna</p>
-                </StyledFooterSubscriptionForm>
+                    <p>Created by Alena</p>
+                </FormContainer>
 
-                <StyledFooterInformation>
-                    <StyledFooterContacts>
+                <ContactAndHours>
+                    <Contacts>
                         <h5>Contacts</h5>
                         <p>+123456789</p>
                         <p>macaronsmania@gmail.com</p>
-                    </StyledFooterContacts>
-                    <StyledFooterWorkingHours>
-                        <h5>Workıng hours</h5>
+                    </Contacts>
+                    <WorkingHours>
+                        <h5>Working hours</h5>
                         <p>Mon-Sun from 09:00 to 20:00</p>
-                    </StyledFooterWorkingHours>
-                </StyledFooterInformation>
-            </StyledFooterBlock>
-        </StyledFooter>
+                    </WorkingHours>
+                </ContactAndHours>
+            </FooterContainer>
+        </FooterSection>
     );
 }
 

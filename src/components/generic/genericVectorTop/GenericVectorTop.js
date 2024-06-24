@@ -1,18 +1,16 @@
 import React from 'react';
-
-import vectorTop from '../../../assets/genericVectorTop/Vector-top.png';
-
+import vectorTop from '../../icons/genericVectorTop/Vector-top.png';
 import {
-    StyledVectorTop
+    BackgroundDecorationTop
 }
     from './GenericVectorTop.style';
 
 
 function GenericVectorTop() {
     return (
-        <StyledVectorTop>
+        <BackgroundDecorationTop>
             <img src={vectorTop} alt="vectorTop" />
-        </StyledVectorTop>
+        </BackgroundDecorationTop>
     );
 }
 

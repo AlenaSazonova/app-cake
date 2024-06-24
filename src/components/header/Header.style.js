@@ -1,61 +1,94 @@
-//import styled from "styled-components"; - это нужно писать в каждом таком файле
-//картинки как правильно
 import styled from "styled-components";
 
+const OpenSansSemiBoldFont = 'Open-Sans-SemiBold';
+const CormorantGaramondSemiBold = 'Cormorant-Garamond-SemiBold';
 
-export const StyledHeader = styled.header`
-    background: linear-gradient(180deg, #aea6ee 100%, #fbc2eb 0%);
+export const HeaderContainer = styled.header`
+    background: ${({ theme }) => theme.backgroundReverse};
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px 2px 5px;
     min-height: 94px; 
-    /*
-    position: absolute;
     width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 50;
-    */
-    
+    box-sizing: border-box;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
 `;
 
-export const StyledLogo = styled.div`
+export const LogoWrapper = styled.div`
     display: flex;
     padding-left: 75px;
     align-items: center;
+
+    @media (max-width: 1200px) {
+        padding-left: 0;
+        margin: 0 auto;
+    }
 `;
 
-export const StyledLogoPictures = styled.img`
+export const LogoImage = styled.img`
     width: 47px;
     height: 47px;
-    /*box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);*/
+
+    @media (max-width: 1200px) {
+        width: 40px;
+        height: 40px;
+    }
 `;
 
-export const StyledLogoName = styled.p`
+export const LogoName = styled.p`
+    font-family: ${CormorantGaramondSemiBold}, sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 30px; /* 30px */
     line-height: 140%;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
+    margin: 0 0 0 5px;
+
+    @media (max-width: 1200px) {
+        font-size: 25px;
+        margin: 0 0 0 10px;
+    }
+`;
+
+export const Navigation = styled.nav`
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 26px;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+        justify-content: space-around;
+        margin-right: 0;
+    }
+`;
+
+export const MenuList = styled.ul`
+    display: flex;
+    list-style-type: none;
     margin: 0;
+
+    @media (max-width: 1200px) {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 `;
 
-export const StyledNav = styled.nav`
-    display: flex;
-    align-items: center;
-`;
-
-export const StyledMenu = styled.ul`
-    display: flex;
-    padding-left: 289px;
-`;
-
-export const StyledMenuElement = styled.li`
+export const MenuItem = styled.li`
+    font-family: ${OpenSansSemiBoldFont}, sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-align: center;
     color: #fff;
-    list-style-type: none;
-    margin-right: 61px;
+    margin-right: 30px;
     padding: 0 13px;
 
     &:last-child {
@@ -64,21 +97,76 @@ export const StyledMenuElement = styled.li`
         display: flex;
         align-items: center;
     }
+
+    @media (max-width: 1200px) {
+        margin: 10px 0;
+        padding: 0;
+    }
 `;
 
-export const StyledVector = styled.img`
+export const PhoneIconImage = styled.img`
     width: 19px;
     height: 21px;
-    padding-right: 4px;
+    margin-right: 4px;
+
+    @media (max-width: 1200px) {
+        width: 16px;
+        height: 18px;
+    }
 `;
 
-export const StyledBasket = styled.img`
+export const CartContainer = styled.button`
+    position: relative;
+    z-index: 50;
+    margin-right: 27px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s, border-radius 0.3s;
+
+    &:hover {
+        border: 2px solid pink;
+        border-radius: 100%;
+    }
+
+    @media (max-width: 1200px) {
+        margin: 10px auto;
+    }
+`;
+
+export const Cart = styled.img`
     width: 59px;
-    height: 59px; 
-    padding-left: 26px;  
+    height: 59px;
+
+    @media (max-width: 1200px) {
+        width: 50px;
+        height: 50px;
+    }
 `;
 
-export const StyledWrapBasket = styled.div`
-    display: flex; 
-    align-items: center; 
+export const SunContainer = styled.button`
+    background: linear-gradient(180deg, #aea6ee 100%, #fbc2eb 0%);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s, border-radius 0.3s;
+
+    &:hover {
+        border: 2px solid pink;
+        border-radius: 100%;
+    }
+
+    @media (max-width: 1200px) {
+        margin: 0 auto;
+    }
+`;
+
+export const SunImage = styled.img`
+    width: 59px;
+    height: 59px;
+    border-radius: 100%;
+
+    @media (max-width: 1200px) {
+        width: 50px;
+        height: 50px;
+    }
 `;
