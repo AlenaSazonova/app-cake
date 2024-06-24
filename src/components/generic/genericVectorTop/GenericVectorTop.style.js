@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const StyledVectorTop = styled.div`
+export const BackgroundDecorationTop = styled.div`
     
 `;

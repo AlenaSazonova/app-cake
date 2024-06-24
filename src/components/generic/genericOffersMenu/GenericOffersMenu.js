@@ -1,39 +1,38 @@
 import React from 'react';
-import imgLike from '../../../assets/genericOffersMenu/heart.png';
-
+import imgLike from '../../icons/genericOffersMenu/heart.png';
 import {
-    StyledMenuBlocks,
-    StyledMenuLike,
-    StyledMenuImg,
-    StyledMenuNameWrap,
-    StyledMenuName,
-    StyledMenuPriceAndButton,
-    StyledMenuPrice,
-    StyledMenuButton,
-    StyledMenuButtonText
+    MenuBlock,
+    LikeButton,
+    ImageContainer,
+    FlavorContainer,
+    FlavorText,
+    PriceAndButtonContainer,
+    MacaronPrice,
+    Button,
+    ButtonText
 }
     from './GenericOffersMenu.style';
 
 
-function GenericOffersMenu({ imgMacaroon, nameMacaroon, price, paddingBottom, marginTop }) {
+function GenericOffersMenu({ macaroonImage, macaroonFlavor, price, paddingBottom, marginTop }) {
     return (
-        <StyledMenuBlocks>
-            <StyledMenuLike>
+        <MenuBlock>
+            <LikeButton>
                 <img src={imgLike} alt="like" />
-            </StyledMenuLike>
-            <StyledMenuImg style={{ paddingBottom, marginTop }}>
-                <img src={imgMacaroon} alt="macaron" />
-            </StyledMenuImg>
-            <StyledMenuNameWrap>
-                <StyledMenuName>{nameMacaroon}</StyledMenuName>
-            </StyledMenuNameWrap>
-            <StyledMenuPriceAndButton>
-                <StyledMenuPrice>Price: {price}</StyledMenuPrice>
-                <StyledMenuButton>
-                    <StyledMenuButtonText>Add</StyledMenuButtonText>
-                </StyledMenuButton>
-            </StyledMenuPriceAndButton>
-        </StyledMenuBlocks>
+            </LikeButton>
+            <ImageContainer style={{ paddingBottom, marginTop }}>
+                <img src={macaroonImage} alt="macaron" />
+            </ImageContainer>
+            <FlavorContainer>
+                <FlavorText>{macaroonFlavor}</FlavorText>
+            </FlavorContainer>
+            <PriceAndButtonContainer>
+                <MacaronPrice>Price: {price}</MacaronPrice>
+                <Button>
+                    <ButtonText>Add</ButtonText>
+                </Button>
+            </PriceAndButtonContainer>
+        </MenuBlock>
     );
 }
 

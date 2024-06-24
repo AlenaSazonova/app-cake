@@ -1,20 +1,16 @@
 import React from 'react';
-
 import GenericOffersMenu from '../genericOffersMenu/GenericOffersMenu';
-
-import arrowLeft from '../../../assets/genericOffersBlock/left-arrow..png';
-import arrowRight from '../../../assets/genericOffersBlock/right-arrow.png';
-import ellipsePink from '../../../assets/genericOffersBlock/Ellipse pink.png';
-import ellipseWhite from '../../../assets/genericOffersBlock/Ellipse white.png';
-
+import arrowLeft from '../../icons/genericOffersBlock/left-arrow..png';
+import arrowRight from '../../icons/genericOffersBlock/right-arrow.png';
+import ellipsePink from '../../icons/genericOffersBlock/Ellipse pink.png';
+import ellipseWhite from '../../icons/genericOffersBlock/Ellipse white.png';
 import {
-    StyledMenuWithArrows,
-    StyledMenuAll,
-    StyledButtonLeft,
-    StyledButtonRight,
-
-    StyledMenuEllipseBlock,
-    StyledMenuEllipseImg
+    OffersContainer,
+    OffersCardsContainer,
+    LeftButton,
+    RightButton,
+    EllipsesContainer,
+    EllipseIndicator
 }
     from './GenericOffersBlock.style';
 
@@ -22,35 +18,35 @@ import {
 function GenericOffersBlock( {menuItems} ) {
     return (
         <div>
-            <StyledMenuWithArrows>
-
-                <StyledButtonLeft>
+            <OffersContainer>
+                <LeftButton>
                     <img src={arrowLeft} alt="arrow-left" />
-                </StyledButtonLeft>
+                </LeftButton>
 
-                <StyledMenuAll>
+                <OffersCardsContainer>
                     {menuItems.map((el, index) => ( //круглые скобки чтобы вернуть значение
                         <GenericOffersMenu
                             key={index}
-                            imgMacaroon={el.imgMacaroon}
-                            nameMacaroon={el.nameMacaroon}
+                            macaroonImage={el.macaroonImage}
+                            macaroonFlavor={el.macaroonFlavor}
                             price={el.price}
                             paddingBottom={el.paddingBottom}
                             marginTop={el.marginTop}
                         />
                     ))}
-                </StyledMenuAll>
+                </OffersCardsContainer>
 
-                <StyledButtonRight>
+                <RightButton>
                     <img src={arrowRight} alt="arrow-right" />
-                </StyledButtonRight>
-            </StyledMenuWithArrows>
-            <StyledMenuEllipseBlock>
-                <StyledMenuEllipseImg src={ellipsePink} alt="ellipse-pink" />
-                <StyledMenuEllipseImg src={ellipseWhite} alt="ellipse-pink" />
-                <StyledMenuEllipseImg src={ellipseWhite} alt="ellipse-pink" />
-                <StyledMenuEllipseImg src={ellipseWhite} alt="ellipse-pink" />
-            </StyledMenuEllipseBlock>
+                </RightButton>
+            </OffersContainer>
+
+            <EllipsesContainer>
+                <EllipseIndicator src={ellipsePink} alt="ellipse-pink" />
+                <EllipseIndicator src={ellipseWhite} alt="ellipse-pink" />
+                <EllipseIndicator src={ellipseWhite} alt="ellipse-pink" />
+                <EllipseIndicator src={ellipseWhite} alt="ellipse-pink" />
+            </EllipsesContainer>
         </div>
     );
 }

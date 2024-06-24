@@ -1,18 +1,16 @@
 import React from 'react';
-
-import vectorBottom from '../../../assets/genericVectorBottom/Vector-bottom.png';
-
+import vectorBottom from '../../icons/genericVectorBottom/Vector-bottom.png';
 import {
-    StyledVectorBottom
+    BackgroundDecorationBottom
 }
     from './GenericVectorBottom.style';
 
 
 function GenericVectorBottom({ position }) {
     return (
-        <StyledVectorBottom style={{ position }}>
+        <BackgroundDecorationBottom style={{ position }}>
             <img src={vectorBottom} alt="vectorBottom" />
-        </StyledVectorBottom>
+        </BackgroundDecorationBottom>
     );
 }
 

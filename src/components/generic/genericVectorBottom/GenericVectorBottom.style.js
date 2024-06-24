@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledVectorBottom = styled.div`
+export const BackgroundDecorationBottom = styled.div`
     position: ${props => props.position};
     bottom: -2px;
     right: 0;

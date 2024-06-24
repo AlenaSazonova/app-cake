@@ -1,63 +1,61 @@
 import React from 'react';
 import GenericTitle from '../generic/genericTitle/GenericTitle';
-
-import map from '../../assets/contacts/Mapsicle Map.png';
-
+import map from '../icons/contacts/Mapsicle Map.png';
 import {
-    StyledSectionContacts,
-    StyledContactsAndMap,
-    StyledContactsWithoutMap,
-    StyledContactsFirstBlock,
-    StyledContactsSecondBlock,
-    StyledContactsTitle,
-    StyledContactsText,
-    StyledContactsContacts,
-    StyledContactsWorkingOurs
+    ContactsSection,
+    ImageTextContainer,
+    TextContainer,
+    TopBlock,
+    BottomBlock,
+    BlockTitle,
+    ContactText,
+    ContactDetails,
+    WorkingHours
 }
     from './Contacts.style';
 
 
 function Contacts() {
     return (
-        <StyledSectionContacts>
+        <ContactsSection>
             <GenericTitle
                 title="How to find us?"
                 subtitle="If you want to visit us, you can find up-to-date information about our "
-                subTitleAdd="confectionery here."
+                additionalSubtitle="confectionery here."
                 marginBottom="73px"
             />
-            <StyledContactsAndMap>
-                <StyledContactsWithoutMap>
-                    <StyledContactsFirstBlock>
-                        <StyledContactsContacts>
-                            <StyledContactsTitle>Contacts</StyledContactsTitle>
-                            <StyledContactsText>+123456789</StyledContactsText>
-                            <StyledContactsText>macaronsmania@gmail.com</StyledContactsText>
-                        </StyledContactsContacts>
+            <ImageTextContainer>
+                <TextContainer>
+                    <TopBlock>
+                        <ContactDetails>
+                            <BlockTitle>Contacts</BlockTitle>
+                            <ContactText>+123456789</ContactText>
+                            <ContactText>macaronsmania@gmail.com</ContactText>
+                        </ContactDetails>
                         <div>
-                            <StyledContactsTitle>Location</StyledContactsTitle>
-                            <StyledContactsText>c. Paris</StyledContactsText>
-                            <StyledContactsText>Rue Raspail, 92300 Levallois-Perret</StyledContactsText>
+                            <BlockTitle>Location</BlockTitle>
+                            <ContactText>c. Paris</ContactText>
+                            <ContactText>Rue Raspail, 92300 Levallois-Perret</ContactText>
                         </div>
-                    </StyledContactsFirstBlock>
-                    <StyledContactsSecondBlock>
-                        <StyledContactsWorkingOurs>
-                            <StyledContactsTitle>Workıng hours</StyledContactsTitle>
-                            <StyledContactsText>Mon-Sun from 09:00 to 20:00</StyledContactsText>
-                        </StyledContactsWorkingOurs>
+                    </TopBlock>
+                    <BottomBlock>
+                        <WorkingHours>
+                            <BlockTitle>Workıng hours</BlockTitle>
+                            <ContactText>Mon-Sun from 09:00 to 20:00</ContactText>
+                        </WorkingHours>
                         <div>
-                            <StyledContactsTitle>Social media</StyledContactsTitle>
-                            <StyledContactsText>Instagram: macarons_mania </StyledContactsText>
-                            <StyledContactsText>Facebook: macarons_mania </StyledContactsText>
-                            <StyledContactsText>Twitter: macarons_mania </StyledContactsText>
+                            <BlockTitle>Social media</BlockTitle>
+                            <ContactText>Instagram: macarons_mania </ContactText>
+                            <ContactText>Facebook: macarons_mania </ContactText>
+                            <ContactText>Twitter: macarons_mania </ContactText>
                         </div>
-                    </StyledContactsSecondBlock>
-                </StyledContactsWithoutMap>
+                    </BottomBlock>
+                </TextContainer>
                 <div>
-                    <img src={map} alt="map" />
+                    <img src={map} alt="Map showing our location" />
                 </div>
-            </StyledContactsAndMap>
-        </StyledSectionContacts>
+            </ImageTextContainer>
+        </ContactsSection>
     );
 }
 

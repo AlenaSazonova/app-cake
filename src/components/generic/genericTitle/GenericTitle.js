@@ -1,20 +1,19 @@
 import React from 'react';
-
 import {
-    StyledTitle,
-    StyledSubtitle,
-    StyledTitlleBlock
+    Title,
+    Subtitle,
+    TitleBlock
 }
     from './GenericTitle.style';
 
 
-function GenericTitle({ title, subtitle, titleColor, marginBottom, subTitleAdd}) {
+function GenericTitle({ title, subtitle, titleColor, marginBottom, additionalSubtitle }) {
     return (
-        <StyledTitlleBlock style={{ marginBottom }}>
-            <StyledTitle color={titleColor}>{title}</StyledTitle>
-            <StyledSubtitle>{subtitle}</StyledSubtitle>
-            <StyledSubtitle>{subTitleAdd}</StyledSubtitle>
-        </StyledTitlleBlock>
+        <TitleBlock style={{ marginBottom }}>
+            <Title color={titleColor}>{title}</Title>
+            <Subtitle>{subtitle}</Subtitle>
+            <Subtitle>{additionalSubtitle}</Subtitle>
+        </TitleBlock>
     );
 }
 
