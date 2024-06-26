@@ -22,19 +22,23 @@ function GenericOffersBlock( {menuItems} ) {
     const [sliding, setSliding] = useState(false);
 
     const handlePrevClick = () => {
-        setSliding(true);
-        setTimeout(() => {
-            setCurrentIndex((prevIndex) => (prevIndex - itemsPerPage + menuItems.length) % menuItems.length);
-            setSliding(false);
-        }, 500); 
+        if (!sliding) {
+            setSliding(true);
+            setTimeout(() => {
+                setCurrentIndex((prevIndex) => (prevIndex - itemsPerPage + menuItems.length) % menuItems.length);
+                setSliding(false);
+            }, 500);
+        }
     };
 
     const handleNextClick = () => {
-        setSliding(true);
-        setTimeout(() => {
-            setCurrentIndex((prevIndex) => (prevIndex + itemsPerPage) % menuItems.length);
-            setSliding(false);
-        }, 500);
+        if (!sliding) {
+            setSliding(true);
+            setTimeout(() => {
+                setCurrentIndex((prevIndex) => (prevIndex + itemsPerPage) % menuItems.length);
+                setSliding(false);
+            }, 500);
+        }
     };
 
     const visibleItems = menuItems.slice(currentIndex, currentIndex + itemsPerPage);
@@ -50,7 +54,7 @@ function GenericOffersBlock( {menuItems} ) {
                     <img src={arrowLeft} alt="arrow-left" />
                 </LeftButton>
 
-                <OffersCardsContainer sliding={sliding}>
+                <OffersCardsContainer $sliding={sliding}>
                     {visibleItems.map((el, index) => (
                         <GenericOffersMenu
                             key={index}
