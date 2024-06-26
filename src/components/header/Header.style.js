@@ -104,6 +104,28 @@ export const MenuItem = styled.li`
     }
 `;
 
+export const MenuLink = styled.a`
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: pink;
+    }
+`;
+
+export const PhoneLink = styled.a`
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        color: pink;
+    }
+`;
+
 export const PhoneIconImage = styled.img`
     width: 19px;
     height: 21px;
