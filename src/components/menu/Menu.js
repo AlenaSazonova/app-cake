@@ -6,6 +6,11 @@ import GenericVectorTop from '../generic/genericVectorTop/GenericVectorTop';
 import macaronBerry from '../icons/menu/macaron-berry.png';
 import macaronChoco from '../icons/menu/macaron-chocolate.png';
 import macaronMatcha from '../icons/menu/macaron-matcha.png';
+import macaronMint from '../icons/menu/macaron-mint.png';
+import macaronBanan from '../icons/menu/macaron-banan.png';
+import macaronBlueberry from '../icons/menu/macaron-blueberry.png';
+
+
 import {
     MenuSection
 }
@@ -16,10 +21,10 @@ function Menu() {
     const menuItems = [
         {
             macaroonImage: macaronBerry,
-            macaroonFlavor:'Macarons with berry ganache',
-            price:'1.50$',
-            paddingBottom:"0",
-            marginTop:"0"
+            macaroonFlavor: 'Macarons with berry ganache',
+            price: '1.50$',
+            paddingBottom: "0",
+            marginTop: "0"
         },
         {
             macaroonImage: macaronChoco,
@@ -34,6 +39,69 @@ function Menu() {
             price: '1$',
             paddingBottom: "50px",
             marginTop: "35px"
+        },
+        {
+            macaroonImage: macaronMint,
+            macaroonFlavor: 'Macarons with mint ganache',
+            price: '2.25$',
+            paddingBottom: "0",
+            marginTop: "0"
+        },
+        {
+            macaroonImage: macaronMint,
+            macaroonFlavor: 'Macarons with mint ganache',
+            price: '2.25$',
+            paddingBottom: "0px",
+            marginTop: "0px"
+        },
+        {
+            macaroonImage: macaronMint,
+            macaroonFlavor: 'Macarons with mint ganache',
+            price: '2.25$',
+            paddingBottom: "0px",
+            marginTop: "0px"
+        },
+        {
+            macaroonImage: macaronBanan,
+            macaroonFlavor: 'Macarons with banana ganache',
+            price: '1.75$',
+            paddingBottom: "0",
+            marginTop: "0"
+        },
+        {
+            macaroonImage: macaronBanan,
+            macaroonFlavor: 'Macarons with banana ganache',
+            price: '1.75$',
+            paddingBottom: "0px",
+            marginTop: "0px"
+        },
+        {
+            macaroonImage: macaronBanan,
+            macaroonFlavor: 'Macarons with banana ganache',
+            price: '1.75$',
+            paddingBottom: "0px",
+            marginTop: "0px"
+        },
+        {
+            macaroonImage: macaronBlueberry,
+            macaroonFlavor: 'Macarons with blueberry ganache',
+            price: '1.75$',
+            paddingBottom: "0",
+            marginTop: "0"
+        },
+        {
+            macaroonImage: macaronBlueberry,
+            macaroonFlavor: 'Macarons with blueberry ganache',
+            price: '1.75$',
+            paddingBottom: "0px",
+            marginTop: "0px"
+        },
+        {
+            macaroonImage: macaronBlueberry,
+            macaroonFlavor: 'Macarons with blueberry ganache',
+            price: '1.75$',
+            paddingBottom: "0px",
+            marginTop: "0px"
         }
     ]
 
@@ -49,7 +117,7 @@ function Menu() {
 
             <GenericOffersBlock menuItems={menuItems} />
 
-            <GenericVectorBottom 
+            <GenericVectorBottom
                 position="relative"
             />
         </MenuSection>

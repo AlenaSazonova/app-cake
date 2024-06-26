@@ -10,6 +10,8 @@ import {
     Navigation,
     MenuList,
     MenuItem,
+    MenuLink,
+    PhoneLink,
     PhoneIconImage,
     CartContainer,
     Cart,
@@ -28,13 +30,23 @@ function Header({ toggleTheme, icon }) {
             </LogoWrapper>
             <Navigation>
                 <MenuList>
-                    <MenuItem>Home</MenuItem>
-                    <MenuItem>About us</MenuItem>
-                    <MenuItem>Menu</MenuItem>
-                    <MenuItem>Contact</MenuItem>
                     <MenuItem>
-                        <PhoneIconImage src={vector} alt="Phone icon" />
-                        <p>+123456789</p>
+                        <MenuLink href='#home'>Home</MenuLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuLink href='#about'>About us</MenuLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuLink href='#menu'>Menu</MenuLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuLink href='#contact'>Contact</MenuLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <PhoneLink href="tel:+123456789">
+                            <PhoneIconImage src={vector} alt="Phone icon" />
+                            <p>+123456789</p>
+                        </PhoneLink>
                     </MenuItem>
                 </MenuList>
             </Navigation>
